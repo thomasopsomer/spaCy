@@ -13,6 +13,7 @@ from . import fr
 from . import pt
 from . import nl
 from . import sv
+from . import hi
 
 
 try:
@@ -31,6 +32,7 @@ set_lang_class(hu.Hungarian.lang, hu.Hungarian)
 set_lang_class(zh.Chinese.lang, zh.Chinese)
 set_lang_class(nl.Dutch.lang, nl.Dutch)
 set_lang_class(sv.Swedish.lang, sv.Swedish)
+set_lang_class(hi.Hindi.lang, hi.Hindi)
 
 
 def load(name, **overrides):
