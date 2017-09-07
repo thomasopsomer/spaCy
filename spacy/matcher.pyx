@@ -426,7 +426,7 @@ cdef class PhraseMatcher:
         self._phrase_key = <attr_t*>self.mem.alloc(max_length, sizeof(attr_t))
         self.max_length = max_length
         self.vocab = vocab
-        self.matcher = Matcher(self.vocab, {})
+        self.matcher = Matcher(self.vocab)
         self.phrase_ids = PreshMap()
         for phrase in phrases:
             if len(phrase) < max_length:
